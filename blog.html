@@ -12,42 +12,6 @@
       <a href="#top" class="scroll__link"></a>
     </div>
 
-    <div class="post-form no-display">
-      <div class="post-form__wrapper"></div>
-      <form>
-        <p><strong>New Post</strong></p>
-
-        <p><label for="post_type">Type of post</label></p>
-        <select name="post_type" id="post_type">
-          <option value="video">video</option>
-          <option value="audio">audio</option>
-          <option value="text">text</option>
-          <option value="image">image</option>
-        </select>
-
-        <p><label for="image">Image</label></p>
-        <input type="text" name="image" id="image" placeholder="Image URL">
-
-        <p><label for="title">Title</label></p>
-        <input type="text" name="title" id="title" minlength="3" maxlength="19">
-
-        <p><label for="author">Author</label></p>
-        <input type="text" name="author" id="author">
-
-        <p><label for="date">Date</label></p>
-        <input type="date" name="date" id="date">
-
-        <p><label for="date">Post description</label></p>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-
-        <p><label for="quote">Quote</label></p>
-        <input type="text" name="quote" id="quote">
-        
-        <input type="submit" value="Submit" id="submit_post">
-        <button id="form_post_cancel">Cancel</button>
-      </form>
-    </div>
-
     <header class="main-header" id="top">
       <div class="container main-header__container">
         <h4 class="main-header__logo">BlogWorld</h4>
@@ -266,6 +230,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/form_ajax.js"></script>
   </body>
 </html>

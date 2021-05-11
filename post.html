@@ -12,42 +12,6 @@
       <a href="#top" class="scroll__link"></a>
     </div>
 
-    <div class="post-form no-display">
-      <div class="post-form__wrapper"></div>
-      <form>
-        <p><strong>New Post</strong></p>
-
-        <p><label for="post_type">Type of post</label></p>
-        <select name="post_type" id="post_type">
-          <option value="video">video</option>
-          <option value="audio">audio</option>
-          <option value="text">text</option>
-          <option value="image">image</option>
-        </select>
-
-        <p><label for="image">Image</label></p>
-        <input type="text" name="image" id="image" placeholder="Image URL">
-
-        <p><label for="title">Title</label></p>
-        <input type="text" name="title" id="title" minlength="3" maxlength="19">
-
-        <p><label for="author">Author</label></p>
-        <input type="text" name="author" id="author">
-
-        <p><label for="date">Date</label></p>
-        <input type="date" name="date" id="date">
-
-        <p><label for="date">Post description</label></p>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-
-        <p><label for="quote">Quote</label></p>
-        <input type="text" name="quote" id="quote">
-        
-        <input type="submit" value="Submit" id="submit_post">
-        <button id="form_post_cancel">Cancel</button>
-      </form>
-    </div>
-
     <header class="main-header" id="top">
       <div class="container main-header__container">
         <h4 class="main-header__logo">BlogWorld</h4>
@@ -106,13 +70,13 @@
       <div class="container">
         <div class="post__wrapper">
           <div class="post__img">
-            <!-- <img src="img/post/Post_main_img.png" alt="post img"> -->
+            <img src="img/post/Post_main_img.png" alt="post img">
           </div>
           <div class="post__player-block">
-            <!-- <audio controls src="#" class="post__player"> -->
+            <audio controls src="#" class="post__player">
           </div>
           <div class="post__text-block">
-            <!-- <p class="post__text">
+            <p class="post__text">
               The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video. <span class="bold-span">Which come particular teens wasn't.</span> Own day designed suspension conflict unlawful. I'll stayed liable i've. Interact minutes see night translate.
             </p>
             <p class="post__text">
@@ -127,18 +91,18 @@
             </p>
             <p class="post__text">
               With the help of machine learning, it is possible to <del>increase manyfold</del> the work of websites and applications, so, in the upcoming year such tasks as speech, face and visual images recognition, process of diagnostics and results prediction, analysis and sorting of large data volumes will become even easier.
-            </p> -->
-            <!-- <blockquote class="post__quote">
+            </p>
+            <blockquote class="post__quote">
               <p class="post__text post__text_quote">
                 <span class="bold-span">Voice command is really very fast.</span> A person does not need to learn how to navigate the graphical interface and how to use it for an intended purpose. We began to speak almost from birth, and this our skill is very well developed.
               </p>
-            -->
+            </blockquote>
             <div class="post__text-block__quote">
-              <!-- </blockquote> -->
-              <!-- <h2 class="post__heading">Interface trend</h2>
+              
+              <h2 class="post__heading">Interface trend</h2>
               <p class="post__text">
                 People have always sought to make things easier, but more effective. Digital area has already grown out a bit from regular graphical navigation, and one of the most affordable alternatives is the voice interface. However, it will <a href="#" class="post__text_link">replace</a> not all the functions of the UI, but will only become an intermediary between the user and the main function of the site. Why? Here are some of the key arguments.
-              </p> -->
+              </p>
             </div>
             <footer class="post__footer">
               <div class="post__likes">
@@ -391,7 +355,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/form_ajax.js"></script>
-    <script src="js/post.js"></script>
   </body>
 </html>
