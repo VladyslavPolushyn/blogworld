@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node js</title>
+</head>
+<body>
+    <h1>Hello :)</h1>
+
+
+    <script>
+    	const baseUrl = 'http://localhost:3000';
+    	const xhr = new XMLHttpRequest();
+
+			xhr.open('GET', baseUrl + '/api/list');
+			xhr.send();
+
+    	xhr.onload = function() {
+				if(xhr.status !== 200) {
+					console.log(`Error ${xhr.status}: ${xhr.statusText}`);
+				}else {
+					console.log('Все хорошо!');
+					let data = JSON.parse(xhr.response);
+					console.log(data);
+				}
+			}
+
+			xhr.onerror = function() {
+				console.log(`Request failed`);
+			}
+    </script>
+</body>
+</html>
